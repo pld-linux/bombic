@@ -1,3 +1,4 @@
+%bcond_without	sdltest	# disable sdltest program
 Summary:	A 2D Dynablaster clone
 Summary(pl):	Klon Dynablaster w 2D
 Name:		bombic
@@ -30,7 +31,8 @@ Bombic jest klonem gry Dynablaster. Musisz u¿ywaæ bomb do niszczenia murów oraz 
 %{__autoconf}
 %{__autoheader}
 %{__automake}
-%configure
+%configure \
+	--%{!?with_sdltest:dis}%{?with_sdltest:en}able-sdltest
 %{__make}
 
 %install
