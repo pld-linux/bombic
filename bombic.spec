@@ -1,6 +1,6 @@
 %bcond_without	sdltest	# disable sdltest program
 Summary:	A 2D Dynablaster clone
-Summary(pl):	Klon Dynablaster w 2D
+Summary(pl):	Klon Dynablastera w 2D
 Name:		bombic
 Version:	0.0.1
 Release:	1
@@ -9,19 +9,22 @@ Group:		X11/Applications/Games
 Source0:	http://dl.sourceforge.net/bombic/%{name}-%{version}-src.tar.gz
 # Source0-md5:	ee0e0d4594baf902bb25ecc0cb62017c
 URL:		http://bombic.sourceforge.net/
-BuildRequires:	SDL-devel
+BuildRequires:	SDL-devel >= 1.2.0
 BuildRequires:	SDL_image-devel
-BuildRequires:	SDL_ttf-devel
 BuildRequires:	SDL_mixer-devel
+BuildRequires:	SDL_ttf-devel
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Bombic is a Dynablaster clone. You must use bombs to break walls, collecting power-ups while avoiding the bomb flames and monsters.
+Bombic is a Dynablaster clone. You must use bombs to break walls,
+collecting power-ups while avoiding the bomb flames and monsters.
 
 %description -l pl
-Bombic jest klonem gry Dynablaster. Musisz u¿ywaæ bomb do niszczenia murów oraz zbieraæ bonusy, które pozwol± ci unikaæ p³omieni i potworów.
+Bombic jest klonem gry Dynablaster. Trzeba u¿ywaæ bomb do niszczenia
+murów oraz zbieraæ dopalacze, a jednocze¶nie unikaæ p³omieni i
+potworów.
 
 %prep
 %setup -q -n %{name}-%{version}-src
