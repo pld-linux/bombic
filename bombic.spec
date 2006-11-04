@@ -1,4 +1,3 @@
-%bcond_without	sdltest	# disable sdltest program
 Summary:	A 2D Dynablaster clone
 Summary(pl):	Klon Dynablastera w 2D
 Name:		bombic
@@ -34,8 +33,7 @@ potworów.
 %{__autoconf}
 %{__autoheader}
 %{__automake}
-%configure \
-	--%{!?with_sdltest:dis}%{?with_sdltest:en}able-sdltest
+%configure
 %{__make}
 
 %install
