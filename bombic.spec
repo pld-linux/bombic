@@ -1,5 +1,5 @@
 Summary:	A 2D Dynablaster clone
-Summary(pl):	Klon Dynablastera w 2D
+Summary(pl.UTF-8):   Klon Dynablastera w 2D
 Name:		bombic
 Version:	0.0.1
 Release:	1
@@ -20,10 +20,10 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Bombic is a Dynablaster clone. You must use bombs to break walls,
 collecting power-ups while avoiding the bomb flames and monsters.
 
-%description -l pl
-Bombic jest klonem gry Dynablaster. Trzeba u¿ywaæ bomb do niszczenia
-murów oraz zbieraæ dopalacze, a jednocze¶nie unikaæ p³omieni i
-potworów.
+%description -l pl.UTF-8
+Bombic jest klonem gry Dynablaster. Trzeba uÅ¼ywaÄ‡ bomb do niszczenia
+murÃ³w oraz zbieraÄ‡ dopalacze, a jednoczeÅ›nie unikaÄ‡ pÅ‚omieni i
+potworÃ³w.
 
 %prep
 %setup -q -n %{name}-%{version}-src
