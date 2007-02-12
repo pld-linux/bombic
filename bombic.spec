@@ -1,5 +1,5 @@
 Summary:	A 2D Dynablaster clone
-Summary(pl.UTF-8):   Klon Dynablastera w 2D
+Summary(pl.UTF-8):	Klon Dynablastera w 2D
 Name:		bombic
 Version:	0.0.1
 Release:	1
